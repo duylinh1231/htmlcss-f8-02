@@ -11,6 +11,11 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+:root {
+    --font-heading: sen, sans-serif;
+    --primary-color: #ffb900;
+}
+
 /* ========== Common ========== */
 .content {
     width: 1170px;
@@ -33,7 +38,11 @@ a {
     text-align: center;
     color: #ffffff;
     background: #171100;
-    border-radius: 24.5px;
+    border-radius: 999px;
+}
+
+.btn:hover {
+    opacity: 0.9;
 }
 
 /* ========== Header ========== */
@@ -42,6 +51,7 @@ a {
 }
 
 .header.fixed {
+    z-index: 1;
     position: sticky;
     top: -28px;
 }
@@ -91,4 +101,157 @@ a {
 }
 .header .action {
     margin-left: 49px;
+}
+
+/* ========== Hero ========== */
+.hero {
+    padding-top: 56px;
+    background: #fffcf4;
+}
+
+.hero .body {
+    display: flex;
+}
+
+.hero .media-block {
+    position: relative;
+    width: 48%;
+}
+
+/* ========== Hero Left ========== */
+
+.hero .img {
+    width: 470px;
+    height: 685px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.hero-summery {
+    right: 0;
+    bottom: 48px;
+    position: absolute;
+    width: 270px;
+    padding: 28px 24px;
+    background: #ffffff;
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+}
+
+.hero-summery .item {
+    display: flex;
+}
+
+.hero-summery .item + .item {
+    margin-top: 22px;
+}
+
+.hero-summery .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #fff9e8;
+}
+
+.hero-summery .item:nth-of-type(2) .icon {
+    background: #fcefff;
+}
+
+.hero-summery .item:nth-of-type(3) .icon {
+    background: #ebeaff;
+}
+
+.hero-summery .info {
+    margin-left: 16px;
+}
+
+.hero-summery .lable {
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #5f5b53;
+}
+
+.hero-summery .title {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #171100;
+}
+
+/* ========== Hero Right ========== */
+
+.hero .content-block {
+    width: 52%;
+    padding: 64px 0 0 130px;
+}
+
+.hero .heading {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 5.8rem;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    color: #171100;
+}
+
+.hero .desc {
+    margin-top: 22px;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #5f5b53;
+}
+
+.hero .cta-group {
+    display: flex;
+    align-items: center;
+    margin: 38px 0 48px 0;
+}
+
+.hero-cta {
+    min-width: 180px;
+    line-height: 64px;
+    background: var(--primary-color);
+}
+
+.hero .watch-video {
+    display: flex;
+    align-items: center;
+    border: none;
+    background: transparent;
+    margin-left: 28px;
+    cursor: pointer;
+}
+
+.hero .watch-video .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.hero .watch-video span {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #171100;
+}
+
+.hero .stats strong {
+    padding: 0 8px 0 28px;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 4.4rem;
+    line-height: 1.23;
+    color: #171100;
+}
+
+.hero .stats {
+    margin: 8px 0 0 -28px;
 }
