@@ -27,6 +27,21 @@ body {
 a {
     text-decoration: none;
 }
+/* line clamp */
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp.line-2 {
+    --line-clamp: 2;
+}
+
+.break-all {
+    word-break: break-all;
+}
 
 .heading {
     font-family: var(--font-heading);
@@ -356,6 +371,7 @@ a {
 }
 
 .popular .item-course .title {
+    padding-right: 6px;
     font-weight: 600;
     font-size: 1.8rem;
     line-height: 1.67;
