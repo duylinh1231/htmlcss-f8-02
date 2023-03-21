@@ -413,7 +413,14 @@ a {
     background: #2e2100;
 }
 
+.feedback-list {
+    display: flex;
+    overflow: hidden;
+}
+
 .feedback-item {
+    width: 100%;
+    flex-shrink: 0;
     display: flex;
     justify-content: space-between;
 }
